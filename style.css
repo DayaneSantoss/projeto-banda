@@ -1,0 +1,281 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+body {
+    font-family: sans-serif;
+    background: #ffffff;
+    height: 100%;
+    width: 100%;
+
+}
+header nav {
+    background: black;
+    display: flex;
+    width: 900vh;
+    height: 50px;
+    position: fixed; 
+ }
+
+.menu li a {
+    font-size: 1em;
+    color: white;
+    padding: 10px 20px ; /*importante para que o link do menu funcione bem com o background color*/
+    text-decoration: none;
+    line-height: 50px;
+}
+
+
+.menu li a:hover {
+    background-color: rgb(0, 0, 0);
+    outline: solid 2px white;
+    border-radius: 5px;
+    width: 40px;
+    
+}
+    
+.the_band {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 50px;
+}
+.the_band h3 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    font-weight: 100;
+    letter-spacing: 2px;}
+    
+    
+
+.the_band h1 {
+    font-size: 1rem;
+    margin-bottom: 35px;
+    color: #87887fcc;
+    font-weight: 100;
+}
+.the_band p {
+    max-width: 800px;
+    margin-bottom: 5px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+
+.img-integrant {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.img-integrant li {
+    height: 400px;
+    padding: 10px;
+    margin: 80px 30px 20px 20px;
+    background-clip: content-box;
+    background-size: cover;
+    flex-basis: 15rem; /*flex-basis para aparecer a imagem*/ /*rem é melhor para quebra de linha*/
+}
+
+
+@media (max-width: 700px) {
+    .img-integrant li  {width: 100%;}
+}
+.tour-dates {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    
+
+}
+.tour-dates h3 {
+    color: white;
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 1.8rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+
+   
+}
+.tour-dates p {
+    color: darkgray;
+    padding-bottom: 40px;
+}
+.dates li{
+    display: flex;
+    background-color: white;
+    color: rgb(85, 82, 82);
+    list-style: none;
+    width: 59rem;
+    padding: 8px;
+    
+
+}
+.dates strong {
+    background-color: rgb(214, 27, 27);
+    color: white;
+    padding: 2px;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-left: 15px;
+    font-weight: 100;
+}
+.dates .number {
+    background-color: black;
+    color: white;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 8px;
+    padding-right: 8px ;
+    border-radius: 70px;
+    margin-left: 50rem;
+}
+@media (max-width: 1000px) {
+    .dates li {width: 39rem;}
+    .dates .number {margin-left: 490px;}
+}
+@media (max-width: 700px) {
+    .dates li {width:20rem;}
+    .dates .number {margin-left: 190px;}
+}
+.card {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center; /*alinha as imagens no centro depois da quebra*/   
+}
+
+.card li {
+    margin: 10px;
+    margin-top: 30px;
+    background-color: white;
+}
+
+.card img:hover {
+    filter: grayscale(10)
+} 
+
+.card .subtitle {
+    padding: 20px;
+    width: 300px;
+    height: 220px;
+}
+.subtitle h4   {
+    padding-bottom: 20px;
+    
+}
+.subtitle .date {
+    color: rgb(133, 130, 130);
+}
+.subtitle p {
+    padding-bottom: 20px;
+    color: rgb(10, 10, 10);
+}
+
+.subtitle button {
+    background-color: rgb(20, 19, 20);
+    color: white;
+    border-style: none;
+    padding: 15px;
+    border-radius: 5px;
+
+}
+button:hover {
+    color: black;
+    background-color: rgb(247, 248, 250);
+    border: solid 2px black;
+}
+.contact {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+    
+}
+.contact h4 {
+    text-transform: uppercase;
+    padding: 30px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+.contact em {
+    color: rgb(126, 129, 129);
+    padding-bottom: 60px;
+}
+.information {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.1rem;
+   
+}
+.information li img {
+    width: 16px;
+    margin-right: 2px;
+    
+}
+.information li {
+    list-style: none;
+    margin:5px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.formulario li input{
+    padding: 7px;
+    font-size: 1rem;
+    width: 370px;   
+}
+.formulario .row {
+    display: flex;
+    flex-wrap: wrap;  
+}
+.row :nth-child(2) {
+    padding: 0;
+}
+.row :nth-child(1){
+    padding-right: 0;
+}
+
+.row li input {
+    width: 180px;
+    
+}
+.formulario button {
+    padding: 14px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(19, 18, 18);
+    color: white;
+}
+.information button {
+    margin-left: 410px;
+    margin-top: 10px;
+}
+
+@media (max-width: 1100px) {
+    .information ul {
+        padding-top:15px ;}
+}
+.contact .street {
+    margin-top: 100px;
+    max-width: 130%;  
+}
+
+.icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 40px ;
+}
+.icons img {
+    width: 2.4rem;
+    padding: 5px;
+}
