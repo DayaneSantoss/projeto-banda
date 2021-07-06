@@ -1,3 +1,3 @@
-# Bem Vindo a página inicial da Turnê
+# Bem Vindo ao site oficial da Banda!
 
 Nos acompanhe!
